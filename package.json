@@ -2,9 +2,10 @@
   "name": "express-graphql-serverless",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "functions/api.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "netlify-lambda serve src",
+    "build": "netlify-lambda build src"
   },
   "keywords": [],
   "author": "ThunderMiracle",
@@ -15,5 +16,8 @@
     "express-graphql": "^0.11.0",
     "graphql": "^15.3.0",
     "serverless-http": "^2.5.0"
+  },
+  "devDependencies": {
+    "netlify-lambda": "^2.0.1"
   }
 }

@@ -8,11 +8,14 @@ As every request will trigger the restarting of express server, it's better not 
 
 ```shell
 npm install
-npm i -g netlify-cli
+# or
+yarn
 ```
 
 ## Develop
 
 ```shell
-netlify dev
+npm run dev
+#or
+yarn dev
 ```

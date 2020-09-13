@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const { graphqlHTTP } = require("express-graphql");
 const serverless = require("serverless-http");
 
-const schema = require("../schema");
+const schema = require("./settings/schema");
 
 const app = express();
 
