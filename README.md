@@ -19,3 +19,5 @@ npm run dev
 #or
 yarn dev
 ```
+
+Check `http://localhost:9000/api/v1`.

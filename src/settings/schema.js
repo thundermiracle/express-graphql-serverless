@@ -1,12 +1,12 @@
-const { GraphQLSchema, GraphQLObjectType, GraphQLString } = require("graphql");
+import { GraphQLSchema, GraphQLObjectType, GraphQLString } from "graphql";
 
-module.exports = new GraphQLSchema({
+export default new GraphQLSchema({
   query: new GraphQLObjectType({
     name: "HelloWorld",
     fields: () => ({
       message: {
         type: GraphQLString,
-        resolve: () => "Hello World!",
+        resolve: () => "Hello World!!!",
       }
     })
   })

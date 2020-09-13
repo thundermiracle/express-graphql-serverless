@@ -1,9 +1,9 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const { graphqlHTTP } = require("express-graphql");
-const serverless = require("serverless-http");
+import express from "express";
+import bodyParser from "body-parser";
+import { graphqlHTTP } from "express-graphql";
+import serverless from "serverless-http";
 
-const schema = require("./settings/schema");
+import schema from "./settings/schema";
 
 const app = express();
 
@@ -13,4 +13,4 @@ app.use("/", graphqlHTTP({
   graphiql: true,
 }));
 
-exports.handler = serverless(app);
+export const handler = serverless(app);
