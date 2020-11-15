@@ -21,3 +21,7 @@ yarn dev
 ```
 
 Check `http://localhost:9000/api/v1`.
+
+## Description(Japanese)
+
+https://thundermiracle.com/blog/2020-09-14-deploy-express-graphql-serverless-to-netlify/
